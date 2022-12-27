@@ -4,4 +4,5 @@ import axios from 'axios'
 
 import './assets/main.css'
 
-createApp(App).mount('#app').use(axios)
+const app = createApp(App).mount('#app')
+app.config.globalProperties.axios=axios
