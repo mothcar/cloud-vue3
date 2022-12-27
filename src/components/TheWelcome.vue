@@ -5,6 +5,22 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+      numEmployees: 10,
+    };
+  },
+  methods: {
+    getUsers() {
+      console.log('test')
+    }
+  },
+};
 </script>
 
 <template>
@@ -13,6 +29,7 @@ import SupportIcon from './icons/IconSupport.vue'
       <DocumentationIcon />
     </template>
     <template #heading>Documentation</template>
+    <button @click="getUsers">Get all user</button>
 
     Vue’s
     <a target="_blank" href="https://vuejs.org/">official documentation</a>
