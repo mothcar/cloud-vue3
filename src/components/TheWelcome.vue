@@ -16,9 +16,9 @@ export default {
     };
   },
   methods: {
-    getUsers() {
+    async getUsers() {
       const url = 'https://port-0-cloud-node-express-fao2flc1y1v2n.gksl2.cloudtype.app/'
-      const data = axios.get(url)
+      const data = await this.axios.get(url)
       console.log('test, ', data)
     }
   },
